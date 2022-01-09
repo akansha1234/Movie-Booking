@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Grab your ticket now!!!</h1>
+      <div class="movie">
+        <img src="./images/COCO.jpg" class="movie-logo" />
+        <h3>COCO</h3>
+        <p>Price: Rs 200</p>
+        <button class="btn" data-id="200">Book Ticket</button>
+      </div>
+      <div class="movie">
+        <img src="./images/Spirited.jpg" class="movie-logo" />
+        <h3>Spirited Away</h3>
+        <p>Price: Rs 250</p>
+        <button class="btn" data-id="250">Book Ticket</button>
+      </div>
+      <div class="movie">
+        <img src="./images/UP.jpg" class="movie-logo" />
+        <h3>UP (2019)</h3>
+        <p>Price: Rs 200</p>
+        <button class="btn" data-id="200">Book Ticket</button>
+      </div>
+    </div>
+
+    <div class="second-page">
+      <div class="options">
+        <p>
+          <i class="fa fa-angle-left back" style="font-size: 48px;"></i>
+        </p>
+        <p>
+          Available
+          <i class="fa fa-circle" style="font-size: 48px; color: white;"></i>
+        </p>
+        <p>
+          Occupied
+          <i
+            class="fa fa-circle"
+            style="font-size: 48px; color: lightcoral;"
+          ></i>
+        </p>
+        <p>
+          Selected
+          <i
+            class="fa fa-circle"
+            style="font-size: 48px; color: lightblue;"
+          ></i>
+        </p>
+      </div>
+      <hr />
+      <div class="seats">
+        <div class="screen"></div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+      <p class="text">
+        You have selected <span id="count">0</span> seats for a price of Rs<span
+          id="total"
+        >
+          0</span
+        >
+      </p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
